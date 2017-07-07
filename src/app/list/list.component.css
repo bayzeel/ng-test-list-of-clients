@@ -1,0 +1,22 @@
+.item-preview{
+    position: relative;
+    min-height: 60px;
+    font-size: 0.825rem;
+}
+
+.item-preview__wrap-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+}
+
+.item-preview__img{
+    width: 60px;
+    height: 60px;
+}
+
+.item-preview__text{
+    padding-left: 80px;
+}
