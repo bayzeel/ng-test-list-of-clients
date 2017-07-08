@@ -1,4 +1,7 @@
 <ul class="list-group">
+  <li class="list-group-item">
+    <input type="text" #searchBox class="form-control" (keyup)="search(searchBox.value)">
+  </li>
   <li class="list-group-item" *ngFor="let client of clients">
     <div class="item-preview">
       <div class="item-preview__wrap-img">
