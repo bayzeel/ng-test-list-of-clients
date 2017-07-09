@@ -1,5 +1,8 @@
 :host{
     display: block;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .client-profile{
@@ -7,10 +10,7 @@
 }
 
 .client-profile__userpic-section{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 158px;
+    margin-bottom: 1rem;
 }
 
 .client-profile__userpic{
@@ -19,7 +19,25 @@
 }
 
 .client-profile__text-section{
-    padding-left: 158px;
     font-size: 0.9rem;
     line-height: 1.1;
+}
+
+@media all and (min-width: 992px){
+    :host{
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+    }
+
+    .client-profile__userpic-section{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 158px;
+    }
+
+    .client-profile__text-section{
+        padding-left: 158px;
+    }
 }

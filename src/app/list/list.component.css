@@ -9,7 +9,7 @@
 .list-group{
     overflow-y: auto;
     display: block;
-    height: calc(100vh - 5.5rem);
+    height: calc(50vh - 5.5rem);
 }
 
 .list-group-item{
@@ -62,4 +62,10 @@
 
 .item-preview__text{
     padding-left: 80px;
+}
+
+@media all and (min-width: 992px){
+    .list-group{
+        height: calc(100vh - 5.5rem);
+    }
 }
