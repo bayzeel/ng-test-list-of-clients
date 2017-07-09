@@ -1,0 +1,17 @@
+<div class="client-profile" *ngIf="clientDetailsObj">
+  <div class="client-profile__userpic-section">
+    <img class="client-profile__userpic" [src]="clientDetailsObj.general.avatar" alt="">
+  </div>
+  <div class="client-profile__text-section">
+    <p class="font-weight-bold mb-1">{{clientDetailsObj.general.firstName}} {{clientDetailsObj.general.lastName}}</p>
+    <p>{{clientDetailsObj.job.title}} &ndash; {{clientDetailsObj.job.company}}</p>
+
+    <p class="mb-1">{{clientDetailsObj.address.street}}</p>
+    <p class="mb-1">{{clientDetailsObj.address.city}}</p>
+    <p class="mb-1">{{clientDetailsObj.address.zipCode}}</p>
+    <p>{{clientDetailsObj.address.country}}</p>
+
+    <p class="mb-1">{{clientDetailsObj.contact.email}}</p>
+    <p>{{clientDetailsObj.contact.phone}}</p>
+  </div>
+</div>

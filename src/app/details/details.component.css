@@ -1,0 +1,25 @@
+:host{
+    display: block;
+}
+
+.client-profile{
+    position: relative;
+}
+
+.client-profile__userpic-section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 158px;
+}
+
+.client-profile__userpic{
+    width: 128px;
+    height: 128px;
+}
+
+.client-profile__text-section{
+    padding-left: 158px;
+    font-size: 0.9rem;
+    line-height: 1.1;
+}
