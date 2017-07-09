@@ -2,8 +2,27 @@
     display: block;
 }
 
+.wrap-list-group{
+    overflow-y: auto;
+    height: calc(100vh - 2rem);
+}
+
+.list-group{
+    position: relative;
+    padding-top: 3.5rem;
+}
+
 .list-group-item{
     cursor: pointer;
+}
+
+.list-group-item__first{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5rem;
+    border-bottom: none;
 }
 
 /*.list-group-item a{

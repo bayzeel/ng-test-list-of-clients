@@ -1,16 +1,18 @@
-<ul class="list-group">
-  <li class="list-group-item">
-    <input type="text" #searchBox class="form-control" (keyup)="search(searchBox.value)">
-  </li>
-  <li class="list-group-item" *ngFor="let client of clients" (click)="getClient(client)">
-    <div class="item-preview">
-      <div class="item-preview__wrap-img">
-        <img class="item-preview__img" [src]="client.general.avatar" alt="">
+<div class="wrap-list-group">
+  <ul class="list-group">
+    <li class="list-group-item list-group-item__first">
+      <input type="text" #searchBox class="form-control" (keyup)="search(searchBox.value)">
+    </li>
+    <li class="list-group-item" *ngFor="let client of clients" (click)="getClient(client)">
+      <div class="item-preview">
+        <div class="item-preview__wrap-img">
+          <img class="item-preview__img" [src]="client.general.avatar" alt="">
+        </div>
+        <div class="item-preview__text">
+          <p class="font-weight-bold mb-1">{{client.general.firstName}}</p>
+          <p class="mb-0">{{client.job.title}}</p>
+        </div>
       </div>
-      <div class="item-preview__text">
-        <p class="font-weight-bold mb-1">{{client.general.firstName}}</p>
-        <p class="mb-0">{{client.job.title}}</p>
-      </div>
-    </div>
-  </li>
-</ul>
+    </li>
+  </ul>
+</div>
