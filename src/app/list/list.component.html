@@ -1,8 +1,8 @@
-<div class="wrap-list-group">
+<div class="wrap-rigthbar">
+  <div class="searchbox">
+    <input type="text" #searchBox class="form-control input--text" (keyup)="search(searchBox.value)">
+  </div>
   <ul class="list-group">
-    <li class="list-group-item list-group-item__first">
-      <input type="text" #searchBox class="form-control input--text" (keyup)="search(searchBox.value)">
-    </li>
     <li class="list-group-item" *ngFor="let client of clients" (click)="getClient(client)">
       <div class="item-preview">
         <div class="item-preview__wrap-img">
