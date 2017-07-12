@@ -7,8 +7,8 @@ describe('ng-test-list-of-clients App', () => {
     page = new NgTestListOfClientsPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display first paragraph "Liana"', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Liana');
   });
 });
